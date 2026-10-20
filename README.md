@@ -8,6 +8,7 @@ A perfume inventory management system developed in C++ using Object-Oriented Pro
 - List all registered perfumes.
 - Calculate the total value of the inventory.
 - Display a message when the inventory is empty.
+- Validate basic price and volume constraints.
 
 ## Technologies
 
@@ -24,6 +25,7 @@ A perfume inventory management system developed in C++ using Object-Oriented Pro
 - Getters and setters
 - Vectors and object collections
 - Separation of declarations and implementations using header (`.h`) and source (`.cpp`) files
+- Basic input validation
 
 ## How to Run
 
@@ -39,12 +41,17 @@ A perfume inventory management system developed in C++ using Object-Oriented Pro
 - `Stock.h` and `Stock.cpp`: Inventory management, perfume listing, and total inventory value calculation.
 - `perfume-stock.cbp`: Code::Blocks project configuration.
 
+## Limitations
+
+- Inventory data is stored in memory and is lost when the program closes.
+- Non-numeric input for price or volume currently terminates the program.
+
 ## Future Improvements
 
-- Add input validation for price and volume.
-- Improve error handling for invalid menu input.
+- Improve error handling for invalid price and volume input.
 - Add options to remove or edit registered perfumes.
+- Implement persistent storage so inventory data can be saved between sessions.
 
 ## Project Status
 
-Currently under development.
+First functional version. Further improvements are planned.
