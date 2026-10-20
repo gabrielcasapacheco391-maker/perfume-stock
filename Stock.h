@@ -7,12 +7,10 @@ class Stock
 {
     public:
 
-        Stock();
 
-         ~Stock();
    void addPerfume(Perfume p);
     void showInfo();
-double getTotalValue();
+double getTotalValue() const;
     private:
         std::vector<Perfume> perfumes;
 };

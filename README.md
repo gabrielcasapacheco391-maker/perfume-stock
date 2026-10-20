@@ -1,4 +1,4 @@
-# Perfume Stock
+﻿# Perfume Stock
 
 A perfume inventory management system developed in C++ using Object-Oriented Programming (OOP).
 

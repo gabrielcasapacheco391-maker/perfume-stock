@@ -1,14 +1,6 @@
 #include "Stock.h"
 #include <iostream>
-Stock::Stock()
-{
-    //ctor
-}
 
-Stock::~Stock()
-{
-    //dtor
-}
 
 void Stock::addPerfume(Perfume p){
 
@@ -21,20 +13,23 @@ perfumes.push_back(p);
 
 void Stock::showInfo(){
 
-
-for(Perfume p: perfumes){
+if (perfumes.empty()) {
+   std::cout << "infelizmente tem perfume nenhum aqui"<<std::endl;
+  return;
+}
+for(const Perfume& p : perfumes){
 
 
 p.showInfo();
 }
 
- std::cout << getTotalValue()<<std::endl;
+ std::cout << "Valor total do estoque:" << getTotalValue()<<std::endl;
 
 }
-double Stock::getTotalValue()
+double Stock::getTotalValue() const
 {
    double total=0;
-   for(Perfume p : perfumes)
+   for(const Perfume& p: perfumes)
 {
   total+=p.getPrice();
 

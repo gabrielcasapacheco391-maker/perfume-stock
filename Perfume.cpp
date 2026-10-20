@@ -1,29 +1,27 @@
 #include "Perfume.h"
 #include <iostream>
 #include <iomanip>
-Perfume::Perfume(std::string n,std::string b, double p, double m)
+Perfume::Perfume(std::string n,std::string b, double p, double m)  : ml(0), price(0)
 {
-    this->ml=m;
+
+this->setMl(m);
     this->name=n;
     this->brand=b;
-    this->price=p;
+
+    this->setPrice(p);
 
 }
 
-Perfume::~Perfume()
-{
-    //dtor
-}
 
-void Perfume::showInfo(){
+void Perfume::showInfo()const {
 
 
 
 std::cout << "=====  PERFUME ========== " <<std::endl;
 std::cout << "NAME: " << name <<std::endl;
 std::cout << "BRAND: " << brand <<std::endl;
-std::cout << "VOLUME: " << ml <<std::endl;
-std::cout << "PRICE: " << std::fixed << std::setprecision(2) << price << std::endl;
+std::cout << "VOLUME: " <<std::fixed << std::setprecision(2) << ml << std::endl;
+std::cout << "PRICE: " <<  price << std::endl;
 
 
 }
