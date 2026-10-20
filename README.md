@@ -1,39 +1,36 @@
-# Perfume Stock Management System
+# Perfume Stock
 
-A C++ console application designed to manage and monitor a perfume inventory. This project demonstrates solid foundations in Object-Oriented Programming (OOP), memory management, and clean code separation using header and source files.
+A simple perfume inventory management system developed in C++ using Object-Oriented Programming (OOP).
 
-## 🚀 Features
+## Features
 
-*   **Product Registration:** Add new perfumes with specific attributes (e.g., brand, name, volume, price, and stock quantity).
-*   **Inventory Control:** Update stock levels (additions/removals) and monitor available items.
-*   **Data Organization:** Built using strict OOP principles, separating class declarations (`.h`) from implementations (`.cpp`).
+- Register perfumes with name, brand, price, and volume.
+- List all registered perfumes.
+- Calculate the total value of the inventory.
+- Display a message when the inventory is empty.
 
-## 🛠️ Technologies & Concepts Used
+## Technologies
 
-*   **Language:** C++
-*   **Concepts:** Object-Oriented Programming (Classes, Encapsulation, Methods), Data Streams, and Modular Programming.
-*   **IDE Project Files:** Configured for Code::Blocks (`wokef.cbp`).
+- C++
+- Object-Oriented Programming (OOP)
+- Standard Template Library (STL), including `std::vector`
+- Code::Blocks
 
-## 📁 Project Structure
+## Concepts Practiced
 
-*   `Perfume.h` / `Perfume.cpp`: Defines the core attributes and behaviors of a single perfume product.
-*   `Stock.h` / `Stock.cpp`: Manages the collection of perfumes, handling inventory logic.
-*   `main.cpp`: The entry point of the application, containing the interactive menu interface.
-*   `.gitignore`: Properly configured to ignore build and binary files (like `.o`, `.exe`, `bin/`, `obj/`).
+- Classes and objects
+- Encapsulation
+- Constructors
+- Getters and setters
+- Vectors and object collections
+- Separation of declarations and implementations using header (`.h`) and source (`.cpp`) files
 
-## 💻 How to Run
+## How to Run
 
-### Option 1: Using Code::Blocks (Recommended)
-1. Open **Code::Blocks**.
-2. Go to `File` > `Open...` and select the `wokef.cbp` file.
-3. Click the **Build and Run** button (or press `F9`).
+1. Clone this repository.
+2. Open the project in Code::Blocks or compile the source files with a C++ compiler.
+3. Run the program and use the menu to register and list perfumes.
 
-### Option 2: Using the Terminal (g++)
-If you have a C++ compiler installed, navigate to the project directory and run:
-```bash
-g++ main.cpp Perfume.cpp Stock.cpp -o perfume_stock
-./perfume_stock
-```
+## Project Status
 
----
-*Developed as part of my computer science learning journey at Unisinos.*
+This project is under development, with planned improvements to input validation and inventory management.
