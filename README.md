@@ -27,10 +27,14 @@ A simple perfume inventory management system developed in C++ using Object-Orien
 
 ## How to Run
 
-1. Clone this repository.
-2. Open the project in Code::Blocks or compile the source files with a C++ compiler.
-3. Run the program and use the menu to register and list perfumes.
+1. Clone or download this repository.
+2. Open the `perfume-stock.cbp` project file in Code::Blocks.
+3. Build and run the project using Code::Blocks.
 
-## Project Status
+## Project Structure
 
-This project is under development, with planned improvements to input validation and inventory management.
+- `main.cpp`: Main menu and program execution.
+- `Perfume.h` and `Perfume.cpp`: Perfume class, attributes, accessors, and information display.
+- `Stock.h` and `Stock.cpp`: Inventory management, perfume listing, and total inventory value calculation.
+- `perfume-stock.cbp`: Code::Blocks project configuration.
+
